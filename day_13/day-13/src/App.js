@@ -31,7 +31,7 @@ export default function App({ images = defaultImages }) {
       <div style={styles.slider}>
         <img
           src={images[index]}
-          alt={slide-${index}}
+          alt={`slide-${index}`}
           style={styles.image}
           draggable={false}
         />
@@ -47,7 +47,7 @@ export default function App({ images = defaultImages }) {
             <button
               key={i}
               onClick={() => goTo(i)}
-              aria-label={Go to slide ${i + 1}}
+              aria-label={`Go to slide ${i + 1}`}
               style={{
                 ...styles.dot,
                 opacity: i === index ? 1 : 0.5,
